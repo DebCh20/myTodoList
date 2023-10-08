@@ -1,0 +1,62 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Dosis', sans-serif;
+   font-family: 'Mooli', sans-serif; 
+}
+body {
+    background-image: url("./bgImage3.jpg");
+    background-size: cover;
+    background-position: center;
+    
+  }
+  .outerdiv{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20%;
+    top:20px;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  p1{
+    position: relative;
+    left: 40%;
+    margin-bottom: 40px;
+  }
+  li{
+    display: flex;
+    margin-bottom: 2%;    
+  }
+  span{
+    margin-left: 23%;
+    border-radius: 15px;
+    background-color: rgb(236, 182, 106);
+    width:60%;
+    text-align: center;   
+  }
+  #inputTodo{
+    margin-top: 50px; 
+    width: 40%;
+    position: relative;
+    left:35%;
+    height: 40px;
+    background-color: azure;
+    border:none;
+    border-radius: 15px;
+    text-align: center;
+  }
+  #deleteTodo{
+    background-color: rgb(236, 182, 106);
+    margin-left: 1%;
+    border-radius: 15px;
+    width: 50px;
+  }
+  #addTodo{
+    background-color: rgb(41, 247, 223);
+    margin-bottom: 2%;
+    border-radius: 15px;
+    width: 20%;
+    position: relative;
+    left:44%;    
+  }
