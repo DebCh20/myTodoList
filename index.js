@@ -42,7 +42,7 @@ $('#signInBtn').click(()=>{
 })
 
 $('#signInCheck').click(()=>{
-    const url = "http://localhost:3000/signIn";
+    const url = "https://aquadarlingrepository.debasishchandra.repl.co/signIn";
     const userId = $('#userName').val(); 
     const password = $('#password').val();
     
