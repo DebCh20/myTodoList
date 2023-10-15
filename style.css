@@ -60,3 +60,27 @@ body {
     position: relative;
     left:44%;    
   }
+  #signUpBtn, #signInBtn{
+    background-color: rgba(39, 98, 166, 0.363);
+    margin-bottom: 2%;
+    border-radius: 15px;
+    width: 5%;
+    height:25px;
+  }
+
+  .signInModal{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left:40%;
+    top:20%;   
+    #userName,#password,#signInCheck{
+      width: 20%;
+      margin-bottom: 10px;
+    }
+  }
+
+  .error-msg{
+    border-color: red;
+    background: rgb(237, 122, 122);
+  }

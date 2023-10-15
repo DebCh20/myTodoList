@@ -11,6 +11,10 @@
     <script src="index.js"></script>            
 </head>
 <body>
+    <header>
+        <button id="signUpBtn">Sign Up</button>
+        <button id="signInBtn">Sign In</button>
+    </header>
     <div class="outerdiv">         
     <p1>***** Make your todo list *****</p1>
         <ul id="todoList">
@@ -36,6 +40,12 @@
         </ul>
     <input type="text" id="inputTodo" placeholder="Jot down the tasks you want to complete !!"/><br>
     <button id="addTodo">Add to your list</button>
+    </div>
+    <div class="signInModal" style="display: none;">
+        <p3 class="errorText" style="display: none; color: red; margin-bottom:10px">**The userId and password is incorrect**</p3>
+        <input type="text" id="userName" placeholder="Enter userName">
+        <input type="password" id="password"  placeholder="Enter password">
+        <button id="signInCheck">Sign In</button>
     </div>
 </body>
 </html>

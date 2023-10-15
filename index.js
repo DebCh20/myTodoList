@@ -35,4 +35,38 @@ function createNewTodo(text) {
 $('#deleteTodo').click(()=>{
     alert('The task selected will be deleted.')
 })
+
+$('#signInBtn').click(()=>{
+    $('.outerdiv').hide();
+    $('.signInModal').show();
+})
+
+$('#signInCheck').click(()=>{
+    const url = "http://localhost:3000/signIn";
+    const userId = $('#userName').val(); 
+    const password = $('#password').val();
+    
+    // Construct the URL with query parameters
+    const queryParams = new URLSearchParams({ userId, password });
+    const finalUrl = `${url}?${queryParams.toString()}`;
+    
+    fetch(finalUrl)
+    .then(response => response.text())
+    .then(data => {
+        console.log(data);
+         if(data!='success')
+           showError();
+      })
+})
+function showError(){
+    $('.errorText').show();
+    $('#password').addClass('error-msg');
+    
+    $('#password').on('change',()=>{
+        $('.errorText').hide();
+        $('#password').removeClass('error-msg');
+    })
+
+}
+
 })
