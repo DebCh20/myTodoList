@@ -56,6 +56,10 @@ $('#signInCheck').click(()=>{
         console.log(data);
          if(data!='success')
            showError();
+         else if(data=='success'){
+            $('.outerdiv').show();
+            $('.signInModal').hide();
+         }           
       })
 })
 function showError(){
@@ -66,7 +70,6 @@ function showError(){
         $('.errorText').hide();
         $('#password').removeClass('error-msg');
     })
-
 }
 
 })
