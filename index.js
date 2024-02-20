@@ -9,6 +9,7 @@ $('#addTodo').click(()=>{
 })
 
 function createNewTodo(text) {
+  let totalList=$('#todoList li').length;
     // Create a new list item
     const listItem = document.createElement("li");
     listItem.style.listStyleType = "none";
@@ -19,7 +20,7 @@ function createNewTodo(text) {
 
     // Create a new button element
     const button = document.createElement("button");
-    button.id = "deleteTodo";
+    button.id = "deleteTodo_"+(totalList+1);
     button.title = "Done and dusted";
     button.textContent = "Done";
 
